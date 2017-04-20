@@ -32,7 +32,7 @@ export class AppComponent {
       .subscribe((res: Response) => {
         this.results = res.json();
         this.loading = false;
-        console.log(this.results);
+        console.log('do an example here',this.results);
       });
   }
 
@@ -43,6 +43,7 @@ export class AppComponent {
       .subscribe((res: Response) => {
         this.results = res.json();
         this.loading = false;
+        console.log('now kevin what is result,', this.results);
       });
   }
 

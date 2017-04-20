@@ -1,17 +1,13 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar (onSearch)=doSearch($event)></app-nav-bar>
 <app-carousel></app-carousel>
+
 <div class="container">
   <div class="col-md-6">
-
-    <app-filtered-button-group
-      (onSeeAllCheeses)='doSeeAllCheeses()'
-      (onSearchByName)='doSearch($event)' (onSearchSubstitutes)='doSearchSubstitutes($event)' (onSearchByFirmness)='doSearchByFirmness($event)' (onSearchByAnimal)='doSearchByAnimal($event)'>
+    <app-filtered-button-group (onSeeAllCheeses)='doSeeAllCheeses()' (onSearchByName)='doSearch($event)' (onSearchSubstitutes)='doSearchSubstitutes($event)' (onSearchByFirmness)='doSearchByFirmness($event)' (onSearchByAnimal)='doSearchByAnimal($event)'>
     </app-filtered-button-group>
-
   </div>
 
   <div class="col-md-6">
     <app-result-table [cheeses]='results'></app-result-table>
   </div>
-
 </div>

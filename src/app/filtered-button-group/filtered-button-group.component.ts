@@ -1,7 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
-
 @Component({
   selector: 'app-filtered-button-group',
   templateUrl: './filtered-button-group.component.html',
