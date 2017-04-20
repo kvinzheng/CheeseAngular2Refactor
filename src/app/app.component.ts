@@ -28,7 +28,7 @@ export class AppComponent {
   doSeeAllCheeses() {
     this.results = [];
     this.loading = true;
-    this.http.get('http://cheeswhiz.herokuapp.com/api/cheese')
+    this.http.get('https://cheeswhiz.herokuapp.com/api/cheese')
       .subscribe((res: Response) => {
         this.results = res.json();
         this.loading = false;
@@ -39,7 +39,7 @@ export class AppComponent {
   doSearch(cheeName: string) {
     this.results = [];
     this.loading = true;
-    this.http.request(`http://cheeswhiz.herokuapp.com/api/cheese/specific/${cheeName}`)
+    this.http.request(`https://cheeswhiz.herokuapp.com/api/cheese/specific/${cheeName}`)
       .subscribe((res: Response) => {
         this.results = res.json();
         this.loading = false;
@@ -51,7 +51,7 @@ export class AppComponent {
   doSearchSubstitutes(cheeseName: string) {
     this.results = [];
     this.loading = true;
-    this.http.request(`http://cheeswhiz.herokuapp.com/api/cheese/substitute/${cheeseName}`)
+    this.http.request(`https://cheeswhiz.herokuapp.com/api/cheese/substitute/${cheeseName}`)
       .subscribe((res: Response) => {
         this.results = res.json();
         this.loading = false;
@@ -62,7 +62,7 @@ export class AppComponent {
 
     this.results = [];
     this.loading = true;
-    this.http.request(`http://cheeswhiz.herokuapp.com/api/cheese/firmness/${firmness}`)
+    this.http.request(`https://cheeswhiz.herokuapp.com/api/cheese/firmness/${firmness}`)
       .subscribe((res: Response) => {
         this.results = res.json();
         this.loading = false;
@@ -72,7 +72,7 @@ export class AppComponent {
   doSearchByAnimal(animal: string) {
     this.results = [];
     this.loading = true;
-    this.http.request(`http://cheeswhiz.herokuapp.com/api/cheese/animal/${animal}`)
+    this.http.request(`https://cheeswhiz.herokuapp.com/api/cheese/animal/${animal}`)
       .subscribe((res: Response) => {
         this.results = res.json();
         this.loading = false;

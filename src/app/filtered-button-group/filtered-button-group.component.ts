@@ -13,7 +13,7 @@ export class FilteredButtonGroupComponent implements OnInit {
   @Output() onSearchSubstitutes = new EventEmitter()
   @Output() onSearchByFirmness = new EventEmitter()
   @Output() onSearchByAnimal = new EventEmitter()
-  //
+
   constructor() { }
 
   ngOnInit() {

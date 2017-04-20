@@ -3,17 +3,16 @@
   </button>
 
   <div class="dropdown btn-group btn-group-lg">
-   <button role="button" aria-haspopup="true" aria-expanded="false"
-           type="button"
-           class="dropdown-toggle btn btn-lg btn-default"
-           data-toggle="dropdown">
-     Search for Cheese<span class="caret"></span>
-   </button>
-   <ul role="menu" class="dropdown-menu" aria-labelledby="bg-vertical-dropdown-1">
-     <div class="dropdown btn-group dropdown-submenu">
-       <button role="button" aria-haspopup="true" aria-expanded="false"
-               class="dropdown-toggle btn btn-default"
-               data-toggle="dropdown">
+
+    <button role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-lg btn-default" data-toggle="dropdown">
+     Search for Cheese
+     <span class="caret"></span>
+    </button>
+    
+    <ul role="menu" class="dropdown-menu" aria-labelledby="bg-vertical-dropdown-1">
+      <div class="dropdown btn-group dropdown-submenu">
+
+        <button role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
           Search By Firmness<span class="caret"></span>
        </button>
 
@@ -25,22 +24,26 @@
         </ul>
       </div>
 
+        <div class="dropdown btn-group dropdown-submenu">
+          <button id="bg-vertical-dropdown-1" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-default">
+            Search By Animal
+            <span class="caret"></span>
+          </button>
+
+          <ul role="menu" class="dropdown-menu" aria-labelledby="bg-vertical-dropdown-1">
+            <li (click)="searchByAnimal('cow')" role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">cow</a></li>
+            <li (click)="searchByAnimal('goat')" role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">goat</a></li>
+            <li (click)="searchByAnimal('sheep')" role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">sheep</a></li>
+            <li (click)="searchByAnimal('buffalo')" role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">buffalo</a></li>
+          </ul>
+        </div>
+
       <div class="dropdown btn-group dropdown-submenu">
-        <button id="bg-vertical-dropdown-1" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-default"><!-- react-text: 146 -->Search By Animal<!-- /react-text --><!-- react-text: 147 --> <!-- /react-text -->
-          <span class="caret"></span></button>
 
-        <ul role="menu" class="dropdown-menu" aria-labelledby="bg-vertical-dropdown-1">
-          <li (click)="searchByAnimal('cow')" role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">cow</a></li>
-          <li (click)="searchByAnimal('goat')" role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">goat</a></li>
-          <li (click)="searchByAnimal('sheep')" role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">sheep</a></li>
-          <li (click)="searchByAnimal('buffalo')" role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">buffalo</a></li>
-        </ul>
-
-      </div>
-
-      <div class="dropdown btn-group dropdown-submenu">
-        <button id="bg-vertical-dropdown-1" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-default"><!-- react-text: 160 -->Search By Cheese Name<!-- /react-text --><!-- react-text: 161 --> <!-- /react-text -->
-          <span class="caret"></span></button>
+        <button id="bg-vertical-dropdown-1" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-default">
+          Search By Cheese Name
+          <span class="caret"></span>
+        </button>
 
         <ul role="menu" class="dropdown-menu" aria-labelledby="bg-vertical-dropdown-1">
           <li role="presentation" class="">
@@ -53,7 +56,9 @@
       </div>
 
       <div class="dropdown btn-group dropdown-submenu">
-        <button id="bg-vertical-dropdown-1" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-default"><!-- react-text: 169 -->Search for Substitute<!-- /react-text --><!-- react-text: 170 --> <!-- /react-text -->
+
+        <button id="bg-vertical-dropdown-1" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-default">
+          Search for Substitute
           <span class="caret"></span>
         </button>
 
@@ -66,7 +71,6 @@
           </li>
         </ul>
       </div>
-
     </ul>
   </div>
 
