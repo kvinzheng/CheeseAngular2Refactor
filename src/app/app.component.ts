@@ -36,10 +36,10 @@ export class AppComponent {
       });
   }
 
-  doSearch(cheeseName: string) {
+  doSearch(cheeName: string) {
     this.results = [];
     this.loading = true;
-    this.http.request(`http://cheeswhiz.herokuapp.com/api/cheese/specific/${cheeseName}`)
+    this.http.request(`http://cheeswhiz.herokuapp.com/api/cheese/specific/${cheeName}`)
       .subscribe((res: Response) => {
         this.results = res.json();
         this.loading = false;

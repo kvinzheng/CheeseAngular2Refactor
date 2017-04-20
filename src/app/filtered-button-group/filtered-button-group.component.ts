@@ -23,8 +23,8 @@ export class FilteredButtonGroupComponent implements OnInit {
     this.onSeeAllCheeses.emit(null)
   }
 
-  searchByName(cheeseName: string) {
-    this.onSearchByName.emit(cheeseName);
+  searchByName(kevin: string) {
+    this.onSearchByName.emit(kevin);
     event.preventDefault()
   }
 
