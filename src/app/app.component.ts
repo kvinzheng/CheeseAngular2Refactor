@@ -15,6 +15,7 @@ const CHEESES = [
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  // I would have liked to see you get providers working.
   // providers: [CheeseService]
 })
 
@@ -25,6 +26,8 @@ export class AppComponent {
   constructor(private http: Http) {
   }
 
+
+  // would have preferred to see these API calls in a service and dependency injection used here.
   doSeeAllCheeses() {
     this.results = [];
     this.loading = true;
